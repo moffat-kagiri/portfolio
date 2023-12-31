@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moffat Kagiri Portfolio</title>
+    <style>
+        body {
+            background-color: rgb(0 0 0/ 60%);
+            color: rgb(0 0 0);
+            text-align: -webkit-center;
+            align-items: center;
+            background-size: cover; 
+            background-position: center;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(0 125 0 / 20%);
+            color: rgb(0 0 0);
+            padding: 0;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            z-index: 1000;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content a {
+            color: inherit;
+            font-size: xx-large;
+        }
+
+        .buttons-container {
+            display: flex;
+            margin-right: 25px;
+        }
+
+        .buttons-container button,
+        .header-content h1 {
+            margin-left: 25px;
+            margin-right: 25px;
+            padding: 1%;
+            position: relative;
+            margins: 3%;
+            background-color: rgb(0 0 0 / 00%);
+            color: rgb(0 0 0);
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .header-content h2{
+            font-size: xx-large;
+            text-align: center;
+        }
+        
+        section {
+            padding: 5%; 
+            background-color: rgb(0 125 0 / 20%); 
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+
+        .paragraph-text {
+            font-size: x-large;
+            line-height: 1.5;
+            color: rgb(0 0 0);
+            align-items: center;
+        }
+        .paragraph-text p{
+            object-position: center;
+            align-content: center;
+            font-size: inherit;
+            padding-right: 50%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="home.html">Moffat Kagiri</a></h1>
+            <div class="buttons-container">
+                <button onclick="window.location.href = 'about.html'">About</button>
+                <button onclick="window.location.href = 'projects.html'">Projects</button>
+                <button onclick="window.location.href = 'reviews.html'">Reviews</button>
+                <button onclick="window.location.href = 'cv.html'">CV</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Embed a PDF viewer or provide a download link for the resume PDF -->
+    <object data="CV.pdf" type="application/pdf" width="80%" height="600px"> </object>
+    <p>In case you don't have a PDF plugin for this browser, no biggie... you can <a href="CV.pdf" target="_blank">click here to download the PDF file.</a></p>
+</body>
+</html>

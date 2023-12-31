@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moffat Kagiri Portfolio</title>
+    <style>
+        body {
+            background-color: rgb(0 0 0/ 50%);
+            color: rgb(0 0 0);
+            text-align: -webkit-center;
+            background-image: url('background4.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-blend-mode: soft-light; 
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(0 125 0 / 20%);
+            color: rgb(0 0 0);
+            padding: 0;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            z-index: 1000;
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content a {
+            color: inherit;
+            font-size: xx-large;
+        }
+
+        .buttons-container {
+            display: flex;
+            margin-right: 25px;
+        }
+
+        .buttons-container button,
+        .header-content h1 {
+            margin-left: 25px;
+            margin-right: 25px;
+            padding: 1%;
+            position: relative;
+            margins: 3%;
+            background-color: rgb(0 0 0 /00%);
+            color: rgb(0 0 0);
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .header-content h2{
+            font-size: xx-large;
+            text-align: justify;
+        }
+        
+        section {
+            padding: 8%; 
+            background-color: rgb(0 125 0 / 20%); 
+            font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        }
+
+        .paragraph-text {
+            font-size: x-large;
+            line-height: 1.5;
+            color: rgb(0 0 0);
+        }
+        .paragraph-text p{
+            font-size: inherit;
+            padding-right: 50%;
+            text-align: left;
+        }
+        .bullet-points{
+            text-align: left;
+            list-style-type: circle;
+        }
+
+        .bullet-points li::before {
+            font-size: inherit;
+            position: relative;
+        }
+        
+        .contact-columns {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contact-column {
+            width: 25%;
+            text-align: center;
+            text-emphasis-color: rgba(0, 0, 0)
+        }
+
+        .contact-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="home.html">Moffat Kagiri<a></h1>
+            <div class="buttons-container">
+                <button onclick="window.location.href = 'about.html'">About</button>
+                <button onclick="window.location.href = 'projects.html'">Projects</button>
+                <button onclick="window.location.href = 'reviews.html'">Reviews</button>
+                <button onclick="window.location.href = 'cv.html'">CV</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <p class = "paragraph-text">
+            A budding data scientist and student actuary on a quest to redefine the boundaries of anaytical excellence. 
+        </p>    
+        <ul class="bullet-points">
+            <li>Predictive Analytics</li>
+            <li>Risk Management</li>
+            <li>Research</li>
+            <li>ML Research</li>
+            <li>Predictive Analytics</li>
+        </ul>
+
+        <div class="contact-columns">
+            <div class="contact-column">
+                <p><a href="https://github.com/moffat-kagiri" target="_blank">
+                    <img src="github.svg" alt="Github Logo" width="48" height="48">
+                </a></p>
+            </div>
+            <div class="contact-column">
+                <p><a href="mailto:kagirimoffat@outlook.com">
+                    <img src="email.svg" alt="Email Logo" width="48" height="48">
+                </a></p>
+            </div>
+            <div class="contact-column">
+                <p><a href="https://www.linkedin.com/in/moffatkagiri/" target="_blank">
+                    <img src="linkedin.svg" alt="LinkedIn Logo" width="48" height="48">
+                </a></p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
